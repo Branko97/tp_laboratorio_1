@@ -1,7 +1,13 @@
 # depslib dependency file v1.0
-1385316878 source:c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\main.c
+1536161756 source:c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\funcionestp1.c
+
+1536161870 source:c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\main.c
 	<stdio.h>
 	<stdlib.h>
+	"TP1.h"
+	<stdbool.h>
 
-1536086156 source:c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\funcionestp1.c
+1536161609 c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\tp1.h
+
+1536161609 source:c:\users\vit\desktop\trabajo practico\tp_laboratorio_1\trabajo pactico 1\tp1_arandjelovic\tp1.h
 
