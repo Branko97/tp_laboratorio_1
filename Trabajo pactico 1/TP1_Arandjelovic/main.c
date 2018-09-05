@@ -17,7 +17,7 @@ int main()
     float factorialB ;
     float resultado ;
     float resultado2 ;
-    float contadorFac ;
+
     int seleccion ;
     do
     {
@@ -66,8 +66,8 @@ int main()
                     restaNumeros = resta(numero1 , numero2, resultado) ;
                     divideNumeros = division(numero1 , numero2, resultado) ;
                     multiplicaNumeros = multiplicacion(numero1 , numero2, resultado) ;
-                    factorialA = factorial(numero1 , contadorFac , resultado) ;
-                    factorialB = factorial1(numero2 , contadorFac , resultado2) ;
+                    factorialA = factorial(numero1 , resultado) ;
+                    factorialB = factorial1(numero2 , resultado2) ;
 
 
 
@@ -78,33 +78,31 @@ int main()
                 case 4 :
                     system("cls") ;
 
-                    printf("El resultado de A+B es: %.2f \n", sumaNumeros)  ;
-                    printf("El resultado de A-B es: %.2f \n", restaNumeros)  ;
-
-                    if(division == 0)
+                    if(divideNumeros == 0)
                     {
+                        printf("El resultado de A+B es: %.2f \n", sumaNumeros)  ;
+                        printf("El resultado de A-B es: %.2f \n", restaNumeros)  ;
                         printf("No es posible dividir por cero\n") ;
+                        printf("El resultado de A*B es: %.2f \n", multiplicaNumeros)  ;
+                        printf("El factorial de A es: %.2f \n", factorialA)  ;
+                        printf("El factorial de B es: %.2f \n", factorialB)  ;
+
                     }
                     else
                     {
-                    printf("El resultado de A/B es: %.2f \n", divideNumeros) ;
+                        printf("El resultado de A+B es: %.2f \n", sumaNumeros)  ;
+                        printf("El resultado de A-B es: %.2f \n", restaNumeros)  ;
+                        printf("El resultado de A/B es: %.2f \n", divideNumeros) ;
+                        printf("El resultado de A*B es: %.2f \n", multiplicaNumeros)  ;
+                        printf("El factorial de A es: %.2f \n", factorialA)  ;
+                        printf("El factorial de B es: %.2f \n", factorialB)  ;
                     }
 
-                    printf("El resultado de A*B es: %.2f \n", multiplicaNumeros)  ;
-                    printf("El factorial de A es: %.2f \n", factorialA)  ;
-                    printf("El factorial de B es: %.2f \n", factorialB)  ;
-
                     break ;
-
-
-
-
-
             }
             }
     }
-    while(seleccion != '5') ;
-    system("close") ;
+    while(seleccion != 5) ;
     return 0;
 }
 

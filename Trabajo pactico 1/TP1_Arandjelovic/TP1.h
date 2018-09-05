@@ -54,8 +54,9 @@ float multiplicacion(float valorA , float valorB , float resultanteMultiplicacio
     *    \return devuelve el factorial de valorA
     */
 
-float factorial(float valorA , float cantidad , float resultanteFactorialA )
+float factorial(float valorA , float resultanteFactorialA )
 {
+    float cantidad = valorA ;
     float factorial = 1 ;
     for(cantidad = valorA ; cantidad > 1 ; cantidad -- )
     {
@@ -69,10 +70,11 @@ return resultanteFactorialA ;
     *    \param valorB es el numero al cual se le aplicara el factorial
     *    \return devuelve el factorial de valorB
     */
-float factorial1(float valorB , float cantidad , float resultanteFactorialB)
+float factorial1(float valorB , float resultanteFactorialB)
 {
-    int factorial = 1 ;
-    for(cantidad = valorB ; cantidad > 1 ; cantidad -- )
+    float cantidad = valorB ;
+    float factorial = 1 ;
+    for(cantidad = valorB ; cantidad > 1 ; cantidad-- )
     {
         resultanteFactorialB = factorial * cantidad ;
     }
